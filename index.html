@@ -4,36 +4,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BPA Labs</title>
+    <title>Bpa Labs : IT Services, Business Architecture Solutions, System Integrations &amp; Outsourcing</title>
+    <meta name="description" content="Bpa Labs is one-stop destination for Software development, Quality Engineering, Cloud Services, Recruitment &amp; Consulting. We deliver innovative technology solutions around Business architecture ,  IoT, Automation, IT infrastructure &amp; System Integrations">
+    
+    <meta name="keywords" content="Work flow automation , Business process automation , Task automation, system integration , rpa , data migration,  business architecture ,it recruiting , it staffing , cloud services , coaching mentoring , agile training , agile certification">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <section class="nav">
         <img src="./assets/vectors/bpa_logo.png" alt="BPA Labs" class="bpa_logo ">
-        <nav>
-            <a href="#">Home</a>
+        <nav id="nav1">
             <a href="#">About us</a>
-            <a href="#">Services & Products</a>
+            <a href="#services">Services & Products</a>
             <a href="#">Contact Us</a>
+            <a href="#services" class="getstarted">Get Started</a>
         </nav>
+        <button id="hamburger"><img src="./assets/vectors/menu.png" alt=""></button>
     </section>
+    <div id="nav2">
+        <a href="#">About us</a>
+        <a href="#services">Services & Products</a>
+        <a href="#">Contact Us</a>
+        <a href="#services" class="getstarted">Get Started</a>
+    </div>
     <main>
         <section class="about-us">
             <article class="info">
                 <h1>BPA Labs</h1>
-                <p>We help transform your business strategy into high performance executable portfolio. Being an IT
-                    consulting and software services company, BPA Labs offers enterprises take their next leap towards
-                    finding innovative ways to strategize and optimize their business services/operations, information
-                    access, application development and find new venues of market expansion opportunities.</p>
+                <p>BPA Labs transforms your business strategy into actionable plans for success.  We're a one-stop IT consulting and software development firm that helps businesses optimize operations, improve information access, and develop innovative solutions to propel market growth. Let BPA Labs be your partner in achieving  business agility and reaching new heights.</p>
+                <br>
+                <a href="#services" class="getstarted">Get Started</a>
             </article>
-            <article class="gallery">
-                <div class="img-gallery">
-                    <img src="./assets/vectors/trial2.jpg" alt="">
+            <article class="img-gallery">
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="rbtn" id="r1">
+                        <input type="radio" name="rbtn" id="r2">
+                        <input type="radio" name="rbtn" id="r3">
+                        <input type="radio" name="rbtn" id="r4">
+                        <div class="slide first">
+                            <img src="./assets/vectors/about/bpa.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/vectors/about/qualityES.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/vectors/about/cloud.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/vectors/about/IT.jpeg" alt="">
+                        </div>
+                        <div class="navigation-auto">
+                            <div class="auto1"></div>
+                            <div class="auto2"></div>
+                            <div class="auto3"></div>
+                            <div class="auto4"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="r1" class="manualbtn"></label>
+                        <label for="r2" class="manualbtn"></label>
+                        <label for="r3" class="manualbtn"></label>
+                        <label for="r4" class="manualbtn"></label>
+                    </div>
                 </div>
             </article>
         </section>
+        <br>
+        <section class="services" id="services">
+            <h1>Our Services & Products</h1>
+            <article class="servicerow">
+                <div class="service-card">
+                    <div class="servicehead">
+                        <h2>Business Process Automation</h2>
+                        <img src="./assets/vectors/services/diagram.gif" alt="Logo1">
+                    </div>
+                    <p>Your business is unique and so are your processes. If you want to bring immediate core value to the business processes contact us. BPA Labs provide end to end solutions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="servicehead">
+                        <h2>Quality & Engineering Services</h2>
+                        <!-- <img src="./assets/vectors/services/quality.png" alt="Logo1"> -->
+                        <img src="./assets/vectors/services/engineer.gif" alt="Logo1">
+                    </div>
+                    <p>Is your current QA process bottleneck in your development cycle despite of your efforts ?. So why wait ? Leverage our Quality platform framework and increase the potential ROI.</p>
+                </div>
+                <div class="service-card">
+                    <div class="servicehead">
+                        <h2>Cloud Services</h2>
+                        <!-- <img src="./assets/vectors/services/cloud-service.png" alt="Logo1"> -->
+                        <img src="./assets/vectors/services/cloud-network.gif" alt="Logo1">
+                    </div>
+                    <p>The storage of data on cloud-based servers is the latest iteration in the digital revolution that has enabled organisations not only lower risks of loss of data but has also increased remote accessibility of such data.</p>
+                </div>
+            </article>
+            <article class="servicerow">
+                <div class="service-card">
+                    <div class="servicehead">
+                        <h2>IT Staff and Recruiting</h2>
+                        <!-- <img src="./assets/vectors/services/recruitment.png" alt="Logo1"> -->
+                        <img src="./assets/vectors/services/recruitment.gif" alt="Logo1">
+                    </div>
+                    <p>Success lies at the intersection of innovation and superior talent. We provide consulting and talent solutions to fuel the business growth.</p>
+                </div>
+                <div class="service-card">
+                    <div class="servicehead">
+                        <h2>Agile Trainings & Certifications</h2>
+                        <!-- <img src="./assets/vectors/services/certificate.png" alt="Logo1"> -->
+                        <img src="./assets/vectors/services/certificate.gif" alt="Logo1">
+                    </div>
+                    <p>BPA Labs onboards one of the world's leading training providers and organizations to accredit agile courses and ensure all learning takes you on a journey to agile mastery.</p>
+                </div>
+                <div class="service-card">
+                    <div class="servicehead">
+                        <h2>Coaching & Mentoring</h2>
+                        <!-- <img src="./assets/vectors/services/instructor.png" alt="Logo1"> -->
+                        <img src="./assets/vectors/services/presentation.gif" alt="Logo1">
+                    </div>
+                    <p>Learning is a treasure that follows the owner everywhere! BPA Labs onboards one of the world’s leading training providers and organizations to accredit their agile courses and ensure.</p>
+                </div>
+            </article>
+        </section>
+        <br>
+        <section class="testimonials">
+            <h1>Testimonials</h1>
+            
+        </section>
     </main>
+    <script type="module" src="./assets/js/index.js"></script>
+    <script>
+        var c=1;
+        setInterval(() => {
+            document.getElementById('r'+ c).checked = true;
+            c++;
+            if(c>4) c=1;
+        }, 3000);
+    </script>
 </body>
 
 </html>

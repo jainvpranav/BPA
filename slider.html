@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+</head>
+<style>
+    .slider {
+        width: 50%;
+        height: auto;
+        border-radius: 2vw;
+        overflow: hidden;
+    }
+
+    .slides {
+        width: 500%;
+        height: auto;
+        display: flex;
+    }
+
+    .slides input {
+        display: none;
+    }
+
+    .slide {
+        width: 20%;
+        transition: 2s;
+    }
+
+    .slide img {
+        width: 50%;
+        height: auto;
+    }
+
+    .navigation-manual {
+        position: absolute;
+        width: 50%;
+        /* margin-top: -40px; */
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .manualbtn {
+        border: 2px solid blue;
+        padding: 5px;
+        border-radius: 2vw;
+        cursor: pointer;
+        transition: 1s
+    }
+
+    .manualbtn:root(:last-child) {
+        margin-right: 400px;
+    }
+
+    .manualbtn:hover {
+        background-color: black;
+    }
+
+    #r1:checked ~ .first {
+        margin-left: 0;
+    }
+    #r2:checked ~ .first {
+        margin-left: -20%;
+    }
+    #r3:checked ~ .first {
+        margin-left: -40%;
+    }
+    #r4:checked ~ .first {
+        margin-left: -60%;
+    }
+
+    .navigation-auto {
+        position: absolute;
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        margin-top: 385px;
+        gap: 10px;
+    }
+
+    .navigation-auto div {
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 2vw;
+        transition: 1s;
+    }
+
+    .navigation-auto:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    #r1:checked ~ .navigation-auto .auto1 {
+        background: transparent;
+    }
+
+</style>
+
+<body>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="rbtn" id="r1">
+            <input type="radio" name="rbtn" id="r2">
+            <input type="radio" name="rbtn" id="r3">
+            <input type="radio" name="rbtn" id="r4">
+            <div class="slide first">
+                <img src="./assets/vectors/services/automation.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/vectors/services/certificate.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/vectors/services/cloud-service.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./assets/vectors/services/automation.png" alt="">
+            </div>
+            <div class="navigation-auto">
+                <div class="auto1"></div>
+                <div class="auto2"></div>
+                <div class="auto3"></div>
+                <div class="auto4"></div>
+            </div>
+        </div>
+        <div class="navigation-manual">
+            <label for="r1" class="manualbtn"></label>
+            <label for="r2" class="manualbtn"></label>
+            <label for="r3" class="manualbtn"></label>
+            <label for="r4" class="manualbtn"></label>
+        </div>
+    </div>
+    <script>
+        var c=1;
+        setInterval(() => {
+            document.getElementById('r'+ c).checked = true;
+            c++;
+            if(c>4) c=1;
+        }, 3000);
+    </script>
+</body>
+
+</html>
