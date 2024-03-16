@@ -352,7 +352,7 @@ nav a:hover {
     font-size: 30px;
     color: #050571;
     padding: 12px;
-}   
+}
 
 .testimonialsdiv {
     width: 98vw;
@@ -396,13 +396,13 @@ footer {
     border: 3px solid #00d8f0;
     border-bottom: 0;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         'v1 v2 v3 v5 v5'
         'v6 v6 v6 v6 v6';
     gap: 10px;
 }
 
-footer a{
+footer a {
     color: white;
     text-decoration: none;
 }
@@ -422,33 +422,35 @@ footer a{
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    padding: 0 12px; 
+    padding: 0 12px;
 }
+
 .v3 {
     grid-area: v3;
     /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    padding: 0 12px; 
+    padding: 0 12px;
 }
+
 .v5 {
     grid-area: v5;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    padding: 0 12px; 
+    padding: 0 12px;
 }
 
 .v5 img {
-   width: 40px;
-   height: auto; 
+    width: 40px;
+    height: auto;
 }
 
 .socials {
     display: flex;
-    gap: 10px;  
+    gap: 10px;
 }
 
 .v5 .logo {
@@ -544,12 +546,13 @@ footer a{
         width: 90vw;
         height: auto;
     }
+
     footer {
-        grid-template-areas: 
-        'v1 v3'
-        'v2 v2'
-        'v5 v5'
-        'v6 v6';
+        grid-template-areas:
+            'v1 v3'
+            'v2 v2'
+            'v5 v5'
+            'v6 v6';
     }
 }
 
