@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
+    scroll-behavior: smooth;
+}
+
+/* #050571 dark blue */
+/* #00d8f0 light blue */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../vectors/landing/bg.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #050571;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #00d8f0;
+    border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* NAVBAR */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 80vw;
+    min-height: 10vh;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 2vw;
+    color: white;
+    border: 3px solid #050571;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bpa_logo {
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+nav a {
+    color: #050571;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 2vw;
+    border: 1px solid transparent;
+}
+
+nav a:hover {
+    border: 1px solid #050571;
+    background-color: #050571;
+    color: white;
+}
+
+#nav2 {
+    display: none;
+    width: 80vw;
+    padding: 12px;
+    margin: 0 auto;
+    border-radius: 2vw;
+    color: white;
+    border: 3px solid #050571;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#nav2 a {
+    color: #050571;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 2vw;
+    border: 1px solid transparent;
+}
+
+#nav2 a:hover {
+    border: 1px solid #050571;
+    background-color: #050571;
+    color: white;
+}
+
+.getstarted {
+    border: 1px solid #050571 !important;
+    background-color: #050571;
+    color: white !important;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 2vw;
+}
+
+#hamburger {
+    background: transparent;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger img {
+    width: 50px;
+    height: 50px;
+}
+
+main {
+    min-height: 100vh;
+}
+
+main section h1  {
+    text-align: center;
+    background-color: #050571;
+    color: white;
+    padding: 12px;
+    border-radius: 2vw;
+    max-width: 30vw;
+    margin: 0 auto;
+}
+
+main section h2  {
+    text-align: center;
+    color: #050571;
+    padding: 12px;
+    border-radius: 2vw;
+    max-width: 30vw;
+    margin: 0 auto;
+}
+main section h4 {
+    /* background: white; */
+    color: #050571;
+    padding: 12px;
+    border-radius: 2vw;
+    width: 80vw;
+    margin: 0 auto;
+    line-height: 2;
+    text-align: justify;
+}
+main section span {
+    /* background: #00d8f0;
+    padding: 12px;
+    border-radius: 2vw; */
+    font-weight: bolder;
+    /* color: #050580; */
+}
+
+.abm {
+    /* width: 90vw; */
+    /* min-height: 60vh; */
+    padding: 12px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mem {
+    width: 30vw;
+    min-height: 70vh;
+    background: white;
+    border: 2px solid black;
+    padding: 12px;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mem img {
+    width: 20vw;
+    height: auto;
+    border-radius: 50%;
+}
+
+.mem h3 {
+    text-align: center;
+}
+
+footer {
+    background: #050571;
+    min-height: 50vh;
+    border-radius: 2vw 2vw 0 0;
+    padding: 12px;
+    /* border: 3px solid #00d8f0; */
+    border-bottom: 0;
+    display: grid;
+    grid-template-areas:
+        'v1 v2 v3 v5 v5'
+        'v6 v6 v6 v6 v6';
+    gap: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.v1 {
+    grid-area: v1;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: basline;
+    padding: 0 12px;
+}
+
+.v2 {
+    grid-area: v2;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    padding: 0 12px;
+}
+
+.v3 {
+    grid-area: v3;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    padding: 0 12px;
+}
+
+.v5 {
+    grid-area: v5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    padding: 0 12px;
+}
+
+.v5 img {
+    width: 40px;
+    height: auto;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.v5 .logo {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.v6 {
+    padding: 0 12px;
+    grid-area: v6;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+    }
+
+    .bpa_logo {
+        margin: 0;
+    }
+
+    main section h1  {
+        max-width: 80vw;
+    }
+    
+    main section h2  {
+        max-width: 80vw;
+    }
+
+    .abm {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mem {
+        width: 80vw;
+        height: auto;
+    }
+
+    .mem img {
+        width: 50vw;
+        height: auto;
+    }
+
+    footer {
+        grid-template-areas:
+            'v1 v3'
+            'v2 v2'
+            'v5 v5'
+            'v6 v6';
+    }
+
+}
+
+
+/* @media screen and (max-width: 400px) {
+
+} */
