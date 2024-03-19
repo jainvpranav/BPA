@@ -52,7 +52,16 @@
             </div>
         </section>
         <section class="formap">
-            <div class="form"></div>
+            <div class="form">
+                <form action="/assets/php/mail.php" method="post">
+                    <input type="text" placeholder="FULL NAME" name="name" required>
+                    <input type="text" placeholder="EMAIL " name="email" required>
+                    <input type="text" placeholder="CONTACT NO. " name="contact" required>
+                    <input type="text" placeholder="CITY " name="city" required>
+                    <textarea name="message" placeholder="MESSAGE " cols="20" rows="5"></textarea>
+                    <button name="sendbtn" value="submit">Send Message</button>
+                </form>
+            </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13040.001659818858!2d14.467053709122764!3d50.09762203205246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b93551f7041ad%3A0x21e829b80dba8c7e!2skahyzen!5e0!3m2!1sen!2sin!4v1710829666844!5m2!1sen!2sin" class="map" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
