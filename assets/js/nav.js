@@ -10,10 +10,10 @@ if (screen.width < 850) {
 hamburger.addEventListener("click", () => {
     if (nav2.style.display === "flex") {
         nav2.style.display = "none";
-        hamimg.src = "./assets/vectors/landing/menu.png";
+        hamimg.src = "/assets/vectors/landing/menu.png";
     }
     else {
         nav2.style.display = "flex";
-        hamimg.src = "./assets/vectors/landing/close.png";
+        hamimg.src = "/assets/vectors/landing/close.png";
     }
 })

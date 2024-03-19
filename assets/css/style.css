@@ -354,6 +354,10 @@ nav a:hover {
     padding: 12px;
 }
 
+.testimonials h3 {
+    text-align: center;
+}
+
 .testimonialsdiv {
     width: 98vw;
     padding: 12px;
@@ -368,7 +372,7 @@ nav a:hover {
 
 .testimonialcard {
     width: 30vw;
-    height: auto;
+    min-height: 60vh;
     background-color: white;
     border-radius: 2vw;
     border: 3px solid black;
@@ -380,7 +384,7 @@ nav a:hover {
 }
 
 .testimonialcard img {
-    width: 100px;
+    width: 20vw;
     height: auto;
 }
 
@@ -393,7 +397,7 @@ footer {
     min-height: 50vh;
     border-radius: 2vw 2vw 0 0;
     padding: 12px;
-    border: 3px solid #00d8f0;
+    /* border: 3px solid #00d8f0; */
     border-bottom: 0;
     display: grid;
     grid-template-areas:
@@ -547,6 +551,10 @@ footer a {
         height: auto;
     }
 
+    .testimonialcard img {
+        width: 50vw;
+    }
+
     footer {
         grid-template-areas:
             'v1 v3'
@@ -570,5 +578,9 @@ footer a {
 
     .servicehead {
         flex-direction: column;
+    }
+
+    .testimonialcard img {
+        width: 80vw;
     }
 }
