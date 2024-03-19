@@ -137,7 +137,7 @@ nav a:hover {
 }
 
 main {
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -148,31 +148,31 @@ main {
     background-color:#050571;
     border-radius: 2vw;
     padding: 12px;
-    width: 20vw;
+    max-width: 30vw;
 }
 
 .contact {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .c1{
-    width: 70vw;
+    height: 50vh;
     padding: 12px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     gap: 50px;
     /* border: 1px solid black; */
 }
 .c2{
-    width: 70vw;
+    height: 50vh;
     padding: 12px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     /* border: 1px solid black; */
@@ -181,15 +181,32 @@ main {
 .contact a {
     color: black;
     text-decoration: none;
+    /* border: 1px solid black; */
 }
 
-.contact img {
-    width: 10vw;
-    height: auto;
+.c1 img, .c2 img {
+    height: 20vh;
+    width: auto;
+    margin: 10px;
+    /* border: 1px solid black; */
 }
 
 .contact h3 {
     text-align: center;
+    /* border: 1px solid black; */
+}
+
+.formap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.map {
+    width: 50vw;
+    height: 70vh;
+    border: none;
 }
 
 footer {
@@ -298,6 +315,18 @@ footer a {
 }
 
 
-/* @media screen and (max-width: 400px) {
-
-} */
+@media screen and (max-width: 450px) {
+    .headingcontact {
+        max-width: 50vw;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .c1, .c2 {
+        height: auto;
+    }
+    .map {
+        width: 70vw;
+        height: 70vh;
+    }
+}
