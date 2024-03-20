@@ -17,3 +17,22 @@ hamburger.addEventListener("click", () => {
         hamimg.src = "./assets/vectors/landing/close.png";
     }
 })
+
+document.getElementById("bpa").addEventListener("click",  function () {
+    window.location.href = "./templates/1bpa.html";
+});
+document.getElementById("qes").addEventListener("click",  function () {
+    window.location.href = "./templates/2qse.html";
+});
+document.getElementById("cs").addEventListener("click",  function () {
+    window.location.href = "./templates/3cloud.html";
+});
+document.getElementById("isr").addEventListener("click",  function () {
+    window.location.href = "./templates/4recruiting.html";
+});
+document.getElementById("atc").addEventListener("click",  function () {
+    window.location.href = "./templates/5agile.html";
+});
+document.getElementById("cm").addEventListener("click",  function () {
+    window.location.href = "./templates/6coaching.html";
+});
