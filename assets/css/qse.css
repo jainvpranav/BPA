@@ -197,7 +197,7 @@ main h2 {
     border-radius: 2vw;
 }
 
-.s1  a {
+.s2 a {
     color: #050571;
     background: #00d8f0;
     padding: 10px;
@@ -231,7 +231,7 @@ main h2 {
     gap: 20px;
     background-color: #050571;
     color: #00d8f0;
-    padding: 20px;
+    padding: 25px;
     border-radius: 2vw;
     text-align: justify;
 }
@@ -288,7 +288,9 @@ main h2 {
 }
 
 .languages img {
-    width: 10vw;
+    width: 12vw;
+    padding: 15px;
+    border-radius: 2vw;
 }
 
 footer {
