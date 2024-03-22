@@ -207,7 +207,7 @@ main h2 {
     width: 80vw;
     gap: 20px;
     background-color: #050571;
-    color: #00d8f0;
+    color: white;
     padding: 25px;
     border-radius: 2vw;
     text-align: justify;
@@ -221,7 +221,7 @@ main h2 {
     width: 80vw;
     gap: 20px;
     background-color: #050571;
-    color: #00d8f0;
+    color: white;
     padding: 20px;
     border-radius: 2vw;
     text-align: justify;
