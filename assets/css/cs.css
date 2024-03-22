@@ -166,6 +166,14 @@ main h2 {
     width: 80vw;
     margin: 0 auto;
     gap: 20px;
+    background: white;
+    border-radius: 2vw;
+    border: 3px solid #050571;
+}
+
+.s1 p {
+    text-align: justify;
+    margin: 10px 30px;
 }
 
 .s1 ol li::marker {
@@ -183,12 +191,34 @@ main h2 {
     border-radius: 2vw;
 }
 
-.s1  a {
-    color: #050571;
-    background: #00d8f0;
-    padding: 10px;
+.s1a2 {
+    width: 80vw;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.s1a2 article {
+    background-color: #050571;
+    color: white;
+    padding: 12px;
     border-radius: 2vw;
-    text-decoration: none;
+}
+
+    ul li::marker {
+        content: '';
+    }
+
+ul li {
+    width: inherit;
+    text-align: center;
+    color: white;
+}
+
+.s1a2 h3, .s1a2 p {
+    width: inherit;
+    text-align: center;
+    color: white;
+    /* border: 1px solid black; */
 }
 
 .s2 {
@@ -202,10 +232,28 @@ main h2 {
     line-height: 2;
 }
 
+.s2 a {
+    color: #050571;
+    background: #00d8f0;
+    padding: 10px;
+    border-radius: 2vw;
+    text-decoration: none;
+}
+
 .s2 img {
     width: 30vw;
     height: auto;
     border-radius: 2vw;
+}
+
+.a1 h1, .a2 h1, .aa2 h1{
+    font-size: 30px;
+}
+.a1 h3, .a2 h3{
+    font-size: 20px;
+}
+.a1 h5, .a2 h5{
+    font-size: 18px;
 }
 
 .a1 {
@@ -217,7 +265,7 @@ main h2 {
     gap: 20px;
     background-color: #050571;
     color: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 2vw;
     text-align: justify;
 }
@@ -274,7 +322,9 @@ main h2 {
 }
 
 .languages img {
-    width: 10vw;
+    width: 12vw;
+    padding: 15px;
+    border-radius: 2vw;
 }
 
 footer {
