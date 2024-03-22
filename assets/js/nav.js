@@ -19,20 +19,20 @@ hamburger.addEventListener("click", () => {
 })
 
 document.getElementById("bpa").addEventListener("click",  function () {
-    window.location.href = "./templates/1bpa.html";
+    window.location.href = "./templates/businessprocessautomation.html";
 });
 document.getElementById("qes").addEventListener("click",  function () {
-    window.location.href = "./templates/2qse.html";
+    window.location.href = "./templates/qualityserviceengineering.html";
 });
 document.getElementById("cs").addEventListener("click",  function () {
-    window.location.href = "./templates/3cloud.html";
+    window.location.href = "./templates/cloudservices.html";
 });
 document.getElementById("isr").addEventListener("click",  function () {
-    window.location.href = "./templates/4recruiting.html";
+    window.location.href = "./templates/itstaffandrecruiting.html";
 });
 document.getElementById("atc").addEventListener("click",  function () {
-    window.location.href = "./templates/5agile.html";
+    window.location.href = "./templates/agiletraining.html";
 });
 document.getElementById("cm").addEventListener("click",  function () {
-    window.location.href = "./templates/6coaching.html";
+    window.location.href = "./templates/coachingMentoring.html";
 });
